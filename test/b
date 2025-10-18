@@ -1,0 +1,10 @@
+// hello.cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string name = "World";
+    std::string message = "Hello, " + name + "!";
+    std::cout << message << std::endl;
+    return 0;
+}
