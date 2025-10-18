@@ -11,13 +11,13 @@ load_dotenv()
 api_key = os.getenv("DEEPSEEK_API_KEY")
 base_url = os.getenv("DEEPSEEK_BASE_URL")
 
-client = openai.OpenAI(
-    api_key=os.getenv("DEEPSEEK_API_KEY"),
-    base_url=os.getenv("DEEPSEEK_BASE_URL")
-)
+# client = openai.OpenAI(
+#     api_key=os.getenv("DEEPSEEK_API_KEY"),
+#     base_url=os.getenv("DEEPSEEK_BASE_URL")
+# )
 
-model = OpenAIModel("deepseek-chat",provider=OpenAIProvider(api_key=api_key, base_url=base_url))
-model = OpenAIChatModel("deepseek-chat",provider=OpenAIProvider(api_key=api_key, base_url=base_url))
+# model = OpenAIModel("deepseek-chat",provider=OpenAIProvider(api_key=api_key, base_url=base_url))
+model = OpenAIChatModel("deepseek-reasoner",provider=OpenAIProvider(api_key=api_key, base_url=base_url))
 agent = Agent(model,system_prompt="You are an experienced programmer",
               tools=[tools.read_file, tools.list_files, tools.rename_file])
 

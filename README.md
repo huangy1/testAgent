@@ -12,7 +12,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 #第一次设置conda报错（win powershell中）
 
 
-
 test prompt:list and read file, base on your knowledge, tell me what lang each file use.
 
 file:///C:/path/to/image.jpg #background 图片设置路径
@@ -20,4 +19,7 @@ file:///C:/path/to/image.jpg #background 图片设置路径
 form . import tools #__init__.py 需要
 
 已追踪文件加入ignore,先
+```bash
 git rm --cached .env  
+```
+deepseek不支持openai的response API，所以用不了OpenAIResponsesModel
