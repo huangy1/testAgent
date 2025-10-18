@@ -13,12 +13,11 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 
-list and read file, base on your knowledge, tell me what lang each file use.
-
-OPENAI_API_KEY = sk-377ee2cc25b64d71bc65bff6b5b18a19 #DEEPSEEK
-
-GEMINI = AIzaSyCd3iXxqPJL4Y7FKVEnCXO4sa8ptbZNjzE
+test prompt:list and read file, base on your knowledge, tell me what lang each file use.
 
 file:///C:/path/to/image.jpg #background 图片设置路径
 
 form . import tools #__init__.py 需要
+
+已追踪文件加入ignore,先
+git rm --cached .env  
