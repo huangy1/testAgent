@@ -1,0 +1,12 @@
+# 最小化依赖版本 - 仅包含核心包
+# 解决 langchain_core.pydantic_v1 模块缺失问题
+
+# 核心 LangChain 包（兼容版本组合）
+langchain==0.1.20
+langchain-core==0.1.52
+langchain-openai==0.1.1
+
+# 必需依赖
+openai==1.109.1
+pydantic==2.12.3
+python-dotenv==1.1.1
